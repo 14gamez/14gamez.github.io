@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Our Games</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+		<div class="game-thumbnail"><img src="{{ post.thumbnail | pretend: site.baseurl }}"/></div>
+        <h2>
+          <a class="post-link" href="#">{{ post.title }}</a>
+        </h2>
+		
+		<div class="download-btn-list">
+			<div class="button android"><a class="post-link" href="{{ post.android_download | prepend: site.baseurl }}">Android</a></div>
+			<div class="button windowsphone"><a class="post-link" href="{{ post.windowsphone_download | prepend: site.baseurl }}">Windows Phone</a></div>
+		</div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+
+</div>
