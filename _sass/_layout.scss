@@ -120,6 +120,7 @@
         .page-link {
             display: block;
             padding: 5px 10px;
+			color: #111;
 
             &:not(:last-child) {
                 margin-right: 0;
@@ -293,7 +294,7 @@
 	width: 200px;
 	float: left;
 	margin-right: 10px;
-	
+	margin-bottom: 10px;
 
 }
 
@@ -301,11 +302,13 @@
 		opacity: 0.5;
 	}
 
-.download-btn-list {
+.meta-info {
+	float: left;
+
 	.button {
 		float: left;
 		border-color: #111;
-		
+		margin-bottom: 10px;
 		margin-right: 10px;
 		
 		a {

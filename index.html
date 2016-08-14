@@ -10,11 +10,11 @@ layout: default
     {% for post in site.posts %}
       <li>
 		<div class="game-thumbnail"><img src="{{ post.thumbnail | pretend: site.baseurl }}"/></div>
-        <h2>
-          <a class="post-link" href="#">{{ post.title }}</a>
-        </h2>
-		
-		<div class="download-btn-list">
+       
+		<div class="meta-info">
+			<h2>
+			  <a class="post-link" href="#">{{ post.title }}</a>
+			</h2>
 			<div class="button android"><a class="post-link" href="{{ post.android_download | prepend: site.baseurl }}">Android</a></div>
 			<div class="button windowsphone"><a class="post-link" href="{{ post.windowsphone_download | prepend: site.baseurl }}">Windows Phone</a></div>
 		</div>
