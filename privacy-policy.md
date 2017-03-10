@@ -4,6 +4,7 @@ title: Privacy Policy
 exclude: true
 sitemap: false
 metatags: noindex, nofollow
+permalink: /privacy-policy/
 ---
 
 # Privacy Policy
